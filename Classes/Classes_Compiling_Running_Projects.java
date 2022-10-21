@@ -118,6 +118,22 @@ public class Classes_Compiling_Running_Projects {
         
         // **************************************************************************************
 
+
+
+        // Encapsulation:
+        //  -> The process of hiding sensitive data from the user and 
+        //     using 'getter' and 'setter' methods instead
+
+        // GETTER:
+        //      public int getx(){
+        //          return x; 
+        //      }
+    
+        // SETTER:
+        //      public void setx(int z){
+        //          x = z; 
+        //      }
+
     }
 //----------------------------------------------------------------------------------------------------------------------------------
 
@@ -216,14 +232,6 @@ public class Classes_Compiling_Running_Projects {
                // someObj.printSomeStuff(); -> INVALID WHY??
                 System.out.println(refQ.poll()); 
                 System.out.println(refQ.poll());
-
-                
-
-        
-
-
-
-
     }
 //----------------------------------------------------------------------------------------------------------------------------------
 

@@ -73,6 +73,11 @@ public class General_Info {
         String someString = keyboard.nextLine();   // Reads next line given via terminal 
 
         // ************* Does .nextLine() append newline char? carriage return char? ******************
+
+        // Formatting Output & Strings in Java
+
+
+
     }
 // --------------------------------------------------------------------------------------------
 
@@ -84,6 +89,7 @@ public class General_Info {
         char    someChar   = 's';          // -> Character
         int     someInt    = 12345;        // -> Whole Number
         boolean someBool   = true;         // -> True or False
+        long    someLong   = 1234123124;
 
         float   someFloat  = 1.3440004f;    // -> Number with UP TO 7 DECIMALS (32-bit)
         double  someDouble = 1.344000454d;    // -> Number with UP TO 15 DECIMALS (64-bit)
@@ -103,7 +109,7 @@ public class General_Info {
         // -------------------+------------------+--------------------------------------------------------------------------+
         //      byte          |     1-bytes      | Whole Number [-127 <-> 127]                                              |
         //     short          |     2-bytes      | Whole Number [-32,768 <-> 32,768]                                        |
-        //      int           |     4-bytes      | Whole Number [2,147,483,648 <-> 2,147,483,647]                           |
+        //      int           |     4-bytes      | Whole Number [-2,147,483,648 <-> 2,147,483,647]                           |
         //      long          |     8-bytes      | Whole Number [-9,223,372,036,854,775,808 <-> 9,223,372,036,854,775,807]  |
         //     float          |     4-bytes      | Fraction w/ UP TO 7 Decimal Digits                                       |
         //     double         |     8-bytes      | Fraction w/ UP TO 15 Decimal Digits                                      |

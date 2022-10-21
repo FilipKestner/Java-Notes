@@ -63,12 +63,8 @@ Java Notes Reference/Index
                 Phantom Reference     
                     **Reference Qeues
 
-    
-
     Method_Reference:
         List of Math Methods
         List of String Methods
-        **API Overview
+        
 
-    Theory & Concepts:
-        **Encapsulation

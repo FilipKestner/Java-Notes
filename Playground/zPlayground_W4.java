@@ -19,8 +19,6 @@ public class zPlayground_W4 {
     }
 
 
-
-
     static void inBetween(){
 
         Scanner kb = new Scanner(System.in);
@@ -50,7 +48,7 @@ public class zPlayground_W4 {
         somePhrase = somePhrase.toUpperCase();
 
         System.out.println(somePhrase);
-        System.out.println((byte)somePhrase.charAt(0));
+        System.out.println((byte)somePhrase.charAt(0));        
     }
 
 
