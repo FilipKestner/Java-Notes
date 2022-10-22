@@ -134,6 +134,8 @@ public class Classes_Compiling_Running_Projects {
         //          x = z; 
         //      }
 
+
+
     }
 //----------------------------------------------------------------------------------------------------------------------------------
 
@@ -235,7 +237,17 @@ public class Classes_Compiling_Running_Projects {
     }
 //----------------------------------------------------------------------------------------------------------------------------------
 
+    private static void operatorOverloading(){
 
+
+        // We have overloaded the .string in the Testing_Class.java
+        // file and therefor whenever the object is CONVERTED TO A 
+        // A STRING THAT METHOD IS CALLED!
+        Testing_Class someClass = new Testing_Class();
+        System.out.println(someClass);
+
+
+    }
 
 
 
@@ -243,7 +255,8 @@ public class Classes_Compiling_Running_Projects {
         //ObjectOrientedProgramming_Explained();
         //CompilingAProject();
         //Classes();
-        referencing(); 
+        //referencing(); 
+        operatorOverloading();
     }
      
 }

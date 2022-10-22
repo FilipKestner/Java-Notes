@@ -37,6 +37,7 @@ public class Testing_Class {
 
 
     // OPERATOR OVERLOADING
+    @Override
     public String toString(){
         return "I am the string repr";
     }

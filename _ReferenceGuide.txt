@@ -5,7 +5,6 @@ Java Notes Reference/Index
         General IO
             Printing (println vs print)
             Scanners & Use Input
-            **Formatting w/ printf
         Variable & Data Types
             List of Primitive Data Types (+ String)
             Size of Primitive Data Types
@@ -55,6 +54,7 @@ Java Notes Reference/Index
             Object Methods
             Static vs Public (in Methods)
             Constructors 
+            Encapsulation
         References
             **Garbage Collection
             Strong Reference
@@ -62,6 +62,12 @@ Java Notes Reference/Index
                 Soft Reference
                 Phantom Reference     
                     **Reference Qeues
+        Operator Overloading
+        
+
+    Formatting_REGEX
+        printf
+        **Regex
 
     Method_Reference:
         List of Math Methods

@@ -1,9 +1,12 @@
 public class zPlayground_W5 {
 
 
-        private static void f1(){
+        private static void f8(){
 
 
+
+
+        
             
         }
 
@@ -14,7 +17,7 @@ public class zPlayground_W5 {
 
 
     public static void main(String args[]){
-        f1();
+        f8();
 
 
     }
