@@ -1,9 +1,7 @@
 package P6_Inheritance_Polymorphism;
 
-public class Testing_Class_Sub extends Testing_Class_Main {
+public class TC1_Sub extends TC1_Main {
     
-
-
 
     @Override
     public int getY(){

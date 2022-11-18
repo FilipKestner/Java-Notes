@@ -1,19 +1,19 @@
 package P6_Inheritance_Polymorphism;
 
-public class Testing_Class_Main {
+public class TC1_Main {
     static int x = 1; 
     static int y; 
 
 
-    Testing_Class_Main(){
+    TC1_Main(){
         y = 1;
     }
 
-    Testing_Class_Main(int someInt){
+    TC1_Main(int someInt){
         x = someInt; 
     }
 
-    Testing_Class_Main(int someInt, int someInt2){
+    TC1_Main(int someInt, int someInt2){
         x = someInt;
         y = someInt2; 
 

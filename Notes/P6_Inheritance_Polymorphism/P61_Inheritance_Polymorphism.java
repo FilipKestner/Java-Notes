@@ -15,7 +15,7 @@
 //#################################################################################################################################################### 
 // 
 package P6_Inheritance_Polymorphism; 
-public class Inheritance_Polymorphism {
+public class P61_Inheritance_Polymorphism {
 
 
     private static void codeExample(){
@@ -31,20 +31,19 @@ public class Inheritance_Polymorphism {
     //  |                                                                        |
     //  |          }                                                             |
     //  |                                                                        |
+    //  |       }                                                                |
     //  | }                                                                      |
-    //  |                                                                        | 
+    //  |________________________________________________________________________| 
     //  .                                                                        .
     //  .                                                                        .
     //  .                                                                        .
-    //  |                                                                        |
+    //   ________________________________________________________________________
     //  | public class OTHER_CLASS extends MAIN_CLASS {                          | -> 'extends' keyword used to create an
     //  |                                                                        |    inheritance relationship 
     //  | }                                                                      | 
     //  .                                                                        .
     //  .                                                                        .
     //  .                                                                        .
-    //  |                                                                        |  
-    //  |                                                                        |  
     //  | public static void Main(String args[]){                                |  
     //  |       MAIN_CLASS someVar1 = new MAIN_CLASS();                          |
     //  |       OTHER_CLASS someVar2 = new OTHER_CLASS();                        |  
@@ -52,9 +51,65 @@ public class Inheritance_Polymorphism {
     //  |       someVar2.SOME_FUNCTION_NAME();                                   | -> Can call methods from the original    
     //  |                                                                        |    class that the sublcass exetnds from. 
     //  | }                                                                      |  
-    //  |                                                                        |    
     //  |________________________________________________________________________|   
     }    
+
+    private static void generalInheritance(){
+    // In the context of OOP there exists a relationship in regards to inheritance:
+    //      SUBCLASS (child)    := the class that inherits from another class
+    //      SUPERCLASS (parent) := the class being inherited from
+    //
+    //      What is inherited? 
+    //          ~ Attributes
+    //          ~ Methods
+    //
+    // EVERY SUBCLASS has only ONE SUPERCLASS, while a SUPERCLASS (parent) can have
+    // MANY SUBCLASSES (children). 
+    
+
+    // TO PREVENT INHERITANCE:
+    //      Use the keyword 'final' in the class decliration to prevent
+    //      any subclass from being created from the superclass in question. 
+    //   ________________________________________________________________________
+    //  | public final class MAIN_CLASS {                                        | -> 'final' is used
+    //  |                                                                        |   
+    //  | }                                                                      |
+    //  |________________________________________________________________________| 
+    //  .                                                                        .
+    //   ________________________________________________________________________
+    //  | public class OTHER_CLASS extends MAIN_CLASS {                          | -> DOES NOT WORK because superclass
+    //  |                                                                        |    has been created using the 'final'
+    //  | }                                                                      |    keyword.
+    //  |________________________________________________________________________|   
+    //
+    //  ** THIS CAN ALSO BE USED WITH METHODS! THEN ANY SUBCLASS CANNOT OVERRIDE THE
+    //  'final' METHOD! PRETTY USEFUL!
+    //
+    //  ** java.lang.String is also as also declared as a final class
+    
+
+    // SCOPE in the Context of Inheritance: 
+    // +--------------------------------------------------------------------------------------+
+    // | MEMBER ACCESS POSSIBLE                                                               |
+    // +------------+------------+------------+-----------------------+-----------+-----------+
+    // |   Scope    | UML symbol | same class | class in same package | subclass  | any class |
+    // +------------+------------+------------+-----------------------+-----------+-----------+
+    // | private    | -          |      ✓     |                       |           |           |
+    // | (package)  | ~          |      ✓     |           ✓           |           |           |
+    // | protected  | #          |      ✓     |           ✓           |     ✓     |           |
+    // | public     | +          |      ✓     |           ✓           |     ✓     |     ✓     |
+    // +------------+------------+------------+-----------------------+-----------+-----------+
+    //
+    //  private   -> NO subclass has access
+    //  protected -> Grants access to subclasses
+    //  public    -> ANY CAN ACCESS
+    //  (package) is DEFAULT, meaning any IN SAME DIRECTORY(package)
+    //
+    //  ** REFER TO 'P4_Methods_Recursion_Scope.java' for more indepth explanation
+    //  ** of SCOPE 
+    }
+
+
 
     private static void inheritanceDetails(){
         // What is Ineherited? 
@@ -76,8 +131,8 @@ public class Inheritance_Polymorphism {
         // private and have the bullet object destroy themselves on contact. 
 
         // Making an object of an inner class: 
-        Testing_Class_Main testingClass = new Testing_Class_Main(); 
-        Testing_Class_Main.Inner_Class testingInnerClass = testingClass.new Inner_Class();
+        TC1_Main testingClass = new TC1_Main(); 
+        TC1_Main.Inner_Class testingInnerClass = testingClass.new Inner_Class();
     }
 
 

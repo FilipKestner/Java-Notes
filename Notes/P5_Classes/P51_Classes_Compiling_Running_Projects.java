@@ -18,7 +18,7 @@
 import java.lang.ref.*;
 
 
-public class Classes_Compiling_Running_Projects {
+public class P51_Classes_Compiling_Running_Projects {
 
 // OOP Explained
 //----------------------------------------------------------------------------------------------------------------------------------
